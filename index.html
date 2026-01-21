@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Lớp Chủ Nhiệm</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="trang-chu">
+      <nav class="nav">
+        <div class="brand">Lớp Chủ Nhiệm</div>
+        <div class="nav-links">
+          <a href="#quy-tac">Quy tắc</a>
+          <a href="#an-toan">An toàn mạng</a>
+          <a href="#gop-y">Góp ý ẩn danh</a>
+          <a href="#hoat-dong">Hoạt động lớp</a>
+          <a href="#phu-huynh">Kết nối phụ huynh</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <p class="kicker">Trang thông tin chính thức</p>
+        <h1>Chia sẻ - Kết nối - Tôn trọng</h1>
+        <p class="lead">
+          Không gian chung của lớp: quy tắc ứng xử, an toàn mạng, hoạt động lớp,
+          và kênh kết nối phụ huynh.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#gop-y">Gửi góp ý</a>
+          <a class="btn ghost" href="#hoat-dong">Xem hoạt động</a>
+        </div>
+      </div>
+      <div class="hero-shape"></div>
+    </header>
+
+    <main>
+      <section class="section" id="quy-tac">
+        <div class="section-header">
+          <h2>Quy tắc ứng xử lớp học</h2>
+          <p>Những điều chúng ta cùng cam kết thực hiện mỗi ngày.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Tôn trọng và lắng nghe</h3>
+            <p>
+              Tôn trọng ý kiến của bạn bè, không chen ngang, không trêu chọc.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Trung thực và trách nhiệm</h3>
+            <p>
+              Không gian lận, không đổ lỗi. Dám nhận lỗi và sửa sai.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Hợp tác và hỗ trợ</h3>
+            <p>
+              Cùng giúp nhau học tập, không để bạn nào bị bỏ lại phía sau.
+            </p>
+          </article>
+          <article class="card">
+            <h3>An toàn và thân thiện</h3>
+            <p>
+              Nói lời tích cực, không bạo lực lời nói hay hành vi.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section accent" id="an-toan">
+        <div class="section-header">
+          <h2>Góc an toàn mạng - phòng, chống bạo lực học đường</h2>
+          <p>Hướng dẫn ngắn gọn để bảo vệ bản thân và bạn bè.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Nhận biết tín hiệu nguy hiểm</h3>
+            <p>
+              Bị trêu chọc, đe doạ, phát tán hình ảnh riêng tư là dấu hiệu cần
+              báo ngay.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Không chia sẻ thông tin cá nhân</h3>
+            <p>
+              Số điện thoại, địa chỉ, mật khẩu không chia sẻ cho người lạ.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Chụp lại bằng chứng</h3>
+            <p>
+              Lưu tin nhắn, ảnh chụp màn hình để giáo viên và nhà trường hỗ trợ.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h3>Tìm người lớn hỗ trợ</h3>
+            <p>
+              Báo với giáo viên chủ nhiệm, phụ huynh, hoặc Tổng phụ trách Đội.
+            </p>
+          </div>
+        </div>
+        <div class="callout">
+          <strong>Đường dây hỗ trợ lớp:</strong>
+          <span>GVCN: 09xx xxx xxx (giờ hành chính)</span>
+        </div>
+      </section>
+
+      <section class="section" id="gop-y">
+        <div class="section-header">
+          <h2>Hộp thư góp ý - phản ánh ẩn danh</h2>
+          <p>
+            Hệ thống không yêu cầu tên. Góp ý sẽ được gửi tới giáo viên chủ nhiệm.
+          </p>
+        </div>
+        <form class="form" id="feedback-form">
+          <label>
+            Chủ đề
+            <input type="text" name="topic" placeholder="Ví dụ: góp ý giờ sinh hoạt" required />
+          </label>
+          <label>
+            Nội dung góp ý
+            <textarea name="message" rows="6" placeholder="Nêu rõ tình huống, thời gian, mong muốn..." required></textarea>
+          </label>
+          <label>
+            Liên hệ (tuỳ chọn)
+            <input type="text" name="contact" placeholder="Số điện thoại hoặc email (nếu muốn)" />
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Gửi góp ý</button>
+            <button type="button" class="btn ghost" id="copy-btn">Sao chép nội dung</button>
+          </div>
+          <p class="form-note">
+            Góp ý sẽ mở email mặc định trên máy bạn. Nếu muốn ẩn danh tuyệt đối,
+            bạn có thể sao chép nội dung và gửi qua kênh riêng.
+          </p>
+        </form>
+      </section>
+
+      <section class="section" id="hoat-dong">
+        <div class="section-header">
+          <h2>Hoạt động lớp - gương người tốt, việc tốt</h2>
+          <p>Cùng lan tỏa điều tích cực.</p>
+        </div>
+        <div class="gallery">
+          <article class="story">
+            <h3>Tuần 1: Nhặt rác sân trường</h3>
+            <p>
+              Tập thể lớp cùng tham gia làm sạch sân trường, giữ môi trường xanh.
+            </p>
+          </article>
+          <article class="story">
+            <h3>Tuần 2: Bạn giúp bạn</h3>
+            <p>
+              Nhóm học tập hỗ trợ bạn yếu môn Toán, cùng tiến bộ mỗi ngày.
+            </p>
+          </article>
+          <article class="story">
+            <h3>Tuần 3: Góc sách chia sẻ</h3>
+            <p>
+              Mỗi bạn một cuốn, cả lớp có thêm thư viện nhỏ để đọc sau giờ học.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section accent" id="phu-huynh">
+        <div class="section-header">
+          <h2>Kênh kết nối phụ huynh</h2>
+          <p>Luôn đồng hành để học sinh phát triển toàn diện.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Nhóm Zalo</h3>
+            <p>Liên hệ GVCN để tham gia nhóm lớp.</p>
+          </div>
+          <div class="contact-card">
+            <h3>Email lớp</h3>
+            <p>lopchunhiem@example.com</p>
+          </div>
+          <div class="contact-card">
+            <h3>Giờ tiếp phụ huynh</h3>
+            <p>Thứ Sáu 16:00 - 17:00 (phòng GVCN)</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Lớp Chủ Nhiệm - Trường ...</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

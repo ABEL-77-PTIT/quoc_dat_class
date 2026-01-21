@@ -1,0 +1,317 @@
+:root {
+  --ink: #1c232b;
+  --muted: #5a6772;
+  --paper: #f7f3ea;
+  --accent: #f2c94c;
+  --accent-deep: #d46a1f;
+  --sea: #2e6f75;
+  --shadow: 0 18px 45px rgba(20, 30, 40, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Gill Sans", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at top right, #fff1c7 0%, #f7f3ea 45%, #eef2f0 100%);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  padding: 160px 6vw 80px;
+  overflow: hidden;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  width: min(1100px, calc(100% - 48px));
+  transform: translateX(-50%);
+  z-index: 5;
+  padding: 16px 26px;
+  background: rgba(244, 242, 237, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 999px;
+  box-shadow: 0 18px 40px rgba(20, 30, 40, 0.18);
+  border: 1px solid rgba(90, 103, 114, 0.15);
+}
+
+.brand {
+  font-family: "Book Antiqua", "Palatino Linotype", serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.nav-links a {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: transparent;
+  transition: background 0.2s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(242, 201, 76, 0.35);
+}
+
+.hero-content {
+  max-width: 640px;
+  position: relative;
+  z-index: 2;
+  animation: rise 0.9s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.kicker {
+  font-size: 13px;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-family: "Book Antiqua", "Palatino Linotype", serif;
+  font-size: clamp(36px, 6vw, 56px);
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.lead {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: 1px solid var(--ink);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.btn.ghost {
+  border-color: var(--sea);
+  color: var(--sea);
+}
+
+.hero-shape {
+  position: absolute;
+  inset: auto -20% -35% 40%;
+  height: 360px;
+  background: conic-gradient(from 120deg, #f2c94c, #d46a1f, #2e6f75, #f2c94c);
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+  padding: 0 6vw 96px;
+}
+
+.section {
+  padding: 26px 0;
+}
+
+.section.accent {
+  background: #ffffffd9;
+  border-radius: 32px;
+  padding: 36px;
+  box-shadow: var(--shadow);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.section-header h2 {
+  font-family: "Book Antiqua", "Palatino Linotype", serif;
+  font-size: clamp(26px, 4vw, 36px);
+}
+
+.section-header p {
+  color: var(--muted);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #ffffffcc;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  min-height: 160px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.timeline {
+  display: grid;
+  gap: 16px;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
+}
+
+.timeline-item h3 {
+  margin-bottom: 6px;
+}
+
+.callout {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: var(--accent);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+  background: #ffffffcc;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #d7d2c5;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.form-note {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.gallery {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.story {
+  border: 1px solid #e0d8c9;
+  padding: 18px;
+  border-radius: 18px;
+  background: #fffaf2;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.contact-card {
+  background: #ffffffcc;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.footer {
+  padding: 24px 6vw 40px;
+  text-align: center;
+  color: var(--muted);
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero {
+    padding-top: 28px;
+  }
+
+  .section.accent {
+    padding: 28px;
+  }
+}
